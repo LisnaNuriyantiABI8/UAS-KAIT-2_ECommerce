@@ -217,7 +217,17 @@ UAS-KAIT-2_ECommerce/
 ├── Kacamata Pria & Wanita.jpg
 ├── facebook.png
 ├── x.png
-└── instagram.png
+├── instagram.png
+├── screenshot-beranda-desktop.png
+├── screenshot-beranda-mobile.jpeg
+├── screenshot-produk-desktop.png
+├── screenshot-produk-mobile.jpeg
+├── screenshot-keranjang-desktop.png
+├── screenshot-keranjang-mobile.jpeg
+├── screenshot-chekout-desktop.png
+├── screenshot-chekout-mobile.jpeg
+├── screenshot-admin-desktop.png
+└── screenshot-admin-mobile.jpeg
 ```
 ---
 
