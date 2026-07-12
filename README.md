@@ -225,7 +225,9 @@ UAS-KAIT-2_ECommerce/
 
 | Halaman | Desktop | Mobile |
 |---|---|---|
-| Beranda | _(tambahkan gambar)_ | _(tambahkan gambar)_ |
-| Produk | _(tambahkan gambar)_ | _(tambahkan gambar)_ |
-| Detail Produk | _(tambahkan gambar)_ | _(tambahkan gambar)_ |
-| Checkout | _(tambahkan gambar)_ | _(tambahkan gambar)_ |
+| Beranda | ![screenshot-beranda-desktop](screenshot-beranda-desktop.png) | ![screenshot-beranda-mobile](screenshot-beranda-mobile.jpeg)|
+| Produk | ![screenshot-produk-desktop](screenshot-produk-desktop.png) |  ![screenshot-produk-mobile](screenshot-produk-mobile.jpeg) |
+| Keranjang |  ![screenshot-keranjang-desktop](screenshot-keranjang-desktop.png) | ![screenshot-keranjang-mobile](screenshot-keranjang-mobile.jpeg) |
+| Checkout | ![screenshot-chekout-desktop](screenshot-chekout-desktop.png) | ![screenshot-chekout-mobile](screenshot-chekout-mobile.jpeg) |
+| Admin | ![screenshot-admin-desktop](screenshot-admin-desktop.png) | ![screenshot-admin-mobile](screenshot-admin-mobile.jpeg) |
+
