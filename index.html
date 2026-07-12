@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Lisna Nuriyanti - Selamat Datang Di Fashion Lisna Nuriyanti</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'id',
+      includedLanguages: 'en,ja,ko,zh-CN,ar,ms,de,fr,es,pt,th,vi,it,ru',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+  <!-- Google Analytics (Dummy) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA-123456789-0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA-123456789-0');
+  </script>
+
+  <base target="_blank">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-wrap">
+      <img src="Logo Toko.jpg" alt="Toko Lisna Nuriyanti">
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Cari produk..." data-i18n-ph="search_ph">
+    </div>
+    <div class="header-tools">
+      <div class="translate-wrapper">
+        <button id="autoTranslateBtn" title="Terjemahkan otomatis ke bahasa lain">🌐 Auto-Translate ▾</button>
+        <div id="langDropdown" class="lang-dropdown hidden">
+          <button class="lang-option" data-lang="id">🇮🇩 Bahasa Indonesia</button>
+          <button class="lang-option" data-lang="en">🇬🇧 English</button>
+          <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+          <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
+          <button class="lang-option" data-lang="zh-CN">🇨🇳 中文</button>
+          <button class="lang-option" data-lang="ar">🇸🇦 العربية</button>
+          <button class="lang-option" data-lang="ms">🇲🇾 Bahasa Melayu</button>
+          <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+          <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+          <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+          <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+          <button class="lang-option" data-lang="th">🇹🇭 ไทย</button>
+          <button class="lang-option" data-lang="vi">🇻🇳 Tiếng Việt</button>
+        </div>
+      </div>
+      <button id="cartBtn">🛒 <span>Keranjang</span> (<span id="cartCount">0</span>)</button>
+      <button id="adminBtn">⚙️ <span>Admin</span></button>
+    </div>
+  </header>
+
+  <div class="gtranslate-wrap">
+    <div id="google_translate_element"></div>
+  </div>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#" data-view="home" class="active">Beranda</a></li>
+      <li><a href="#" data-view="produk">Produk</a></li>
+      <li><a href="#" data-view="profil">Profil Saya</a></li>
+    </ul>
+  </nav>
+
+  <!-- VIEW: BERANDA -->
+  <section id="view-home" class="">
+    <div class="home-hero">
+      <div class="home-hero-text">
+        <h1>Selamat Datang di Toko Lisna Nuriyanti</h1>
+        <p class="tagline-under">Belanja Mudah, Aman, &amp; Terpercaya</p>
+        <h2>Tentang Kami</h2>
+      </div>
+    </div>
+
+    <div class="about-wrap">
+      <p class="tagline-under">Belanja Mudah, Aman, &amp; Terpercaya</p>
+
+      <h2>Tentang Kami</h2>
+      <p class="about-paragraf">
+        Fashion Lisna Nuriyanti menghadirkan produk fashion pria &amp; wanita berkualitas dengan harga
+        terjangkau. Kami berkomitmen memberikan pengalaman belanja yang mudah, aman, dan terpercaya
+        untuk setiap pelanggan.
+      </p>
+
+      <div class="visi-misi-grid">
+        <div class="vm-card">
+          <h3>Visi</h3>
+          <p>
+            Menjadi toko fashion online terpercaya yang menghadirkan gaya berkualitas dan terjangkau
+            untuk setiap kalangan, serta dikenal hingga ke pasar internasional.
+          </p>
+        </div>
+
+        <div class="vm-card">
+          <h3>Misi</h3>
+          <ul>
+            <li>Menyediakan produk fashion berkualitas dengan harga bersahabat.</li>
+            <li>Memberikan pelayanan pelanggan yang ramah, cepat, dan responsif.</li>
+            <li>Menjaga kepercayaan pelanggan melalui transparansi &amp; keamanan transaksi.</li>
+            <li>Terus berinovasi mengikuti tren mode terkini.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIEW: PRODUK -->
+  <section id="view-produk" class="hidden">
+    <div class="categories">
+      <button class="cat-btn active" data-kategori="all">Semua</button>
+      <button class="cat-btn" data-kategori="Celana">Celana</button>
+      <button class="cat-btn" data-kategori="Baju">Baju</button>
+      <button class="cat-btn" data-kategori="Sepatu">Sepatu</button>
+      <button class="cat-btn" data-kategori="Hijab">Hijab</button>
+      <button class="cat-btn" data-kategori="Lainnya">Lainnya</button>
+    </div>
+    <div class="sort-bar">
+      <label>Urutkan:</label>
+      <select id="sortSelector">
+        <option value="default">Rekomendasi</option>
+        <option value="murah">Harga Terendah</option>
+        <option value="mahal">Harga Tertinggi</option>
+        <option value="az">Nama A-Z</option>
+        <option value="za">Nama Z-A</option>
+        <option value="rating">Rating Tertinggi</option>
+      </select>
+    </div>
+    <main id="produk">
+      <h2 id="sectionTitle">Semua Produk</h2>
+      <div id="produkContainer" class="produk-grid"></div>
+    </main>
+  </section>
+
+  <!-- VIEW: DETAIL PRODUK -->
+  <section id="view-detail" class="hidden">
+    <div id="detailContainer"></div>
+  </section>
+
+  <!-- TEMPLATE PRODUK STATIS -->
+  <template id="templateProduk">
+    <style>
+      .template-produk-card { border: 1px solid #ddd; padding: 10px; margin: 5px; display: inline-block; width: 200px; }
+      .template-produk-card img { width: 100%; height: auto; }
+    </style>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Celana Wide Leg.jpg" alt="Wide Leg Pants"></div>
+      <div class="info"><span class="kategori">Celana</span><h3>Wide Leg Pants</h3><div class="harga">Rp169.000</div><div class="pilihan-group"><label>Ukuran: S, M, L, XL</label></div><div class="pilihan-group"><label>Warna: Hitam, Coklat, Krem</label></div><div class="stok">Stok: 634</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Celana Tapered.jpg" alt="Tapered Pants"></div>
+      <div class="info"><span class="kategori">Celana</span><h3>Tapered Pants</h3><div class="harga">Rp149.000</div><div class="pilihan-group"><label>Ukuran: S, M, L, XL</label></div><div class="pilihan-group"><label>Warna: Hitam, Abu, Navy</label></div><div class="stok">Stok: 673</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Celana Cargo.jpg" alt="Cargo Pants"></div>
+      <div class="info"><span class="kategori">Celana</span><h3>Cargo Pants</h3><div class="harga">Rp177.000</div><div class="pilihan-group"><label>Ukuran: S, M, L, XL</label></div><div class="pilihan-group"><label>Warna: Olive, Coklat, Hitam</label></div><div class="stok">Stok: 587</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Celana Chino.jpg" alt="Chino Pants"></div>
+      <div class="info"><span class="kategori">Celana</span><h3>Chino Pants</h3><div class="harga">Rp168.000</div><div class="pilihan-group"><label>Ukuran: S, M, L, XL</label></div><div class="pilihan-group"><label>Warna: Khaki, Navy, Hitam</label></div><div class="stok">Stok: 864</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Kemeja Oversize.jpg" alt="Kemeja Oversize"></div>
+      <div class="info"><span class="kategori">Baju</span><h3>Kemeja Oversize</h3><div class="harga">Rp190.000</div><div class="pilihan-group"><label>Ukuran: S, M, L, XL</label></div><div class="pilihan-group"><label>Warna: Krem, Biru Muda, Pink</label></div><div class="stok">Stok: 670</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Blouse V-Neck.jpg" alt="Blouse V-Neck"></div>
+      <div class="info"><span class="kategori">Baju</span><h3>Blouse V-Neck</h3><div class="harga">Rp165.000</div><div class="pilihan-group"><label>Ukuran: S, M, L, XL</label></div><div class="pilihan-group"><label>Warna: Putih, Pink, Ungu Muda</label></div><div class="stok">Stok: 743</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Kemeja Flannel.jpg" alt="Kemeja Flannel Casual"></div>
+      <div class="info"><span class="kategori">Baju</span><h3>Kemeja Flannel Casual</h3><div class="harga">Rp187.000</div><div class="pilihan-group"><label>Ukuran: S, M, L, XL</label></div><div class="pilihan-group"><label>Warna: Merah, Hijau, Biru</label></div><div class="stok">Stok: 417</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Sweater Rajut.jpg" alt="Sweater Rajut"></div>
+      <div class="info"><span class="kategori">Baju</span><h3>Sweater Rajut</h3><div class="harga">Rp193.000</div><div class="pilihan-group"><label>Ukuran: S, M, L, XL</label></div><div class="pilihan-group"><label>Warna: Krem, Tan, Abu Tua</label></div><div class="stok">Stok: 973</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Sepatu Pantofel Wanita.jpg" alt="Sepatu Loafer Wanita"></div>
+      <div class="info"><span class="kategori">Sepatu</span><h3>Sepatu Loafer Wanita</h3><div class="harga">Rp237.000</div><div class="pilihan-group"><label>Ukuran: 36, 37, 38, 39, 40</label></div><div class="pilihan-group"><label>Warna: Hitam, Coklat, Krem</label></div><div class="stok">Stok: 731</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Sepatu Pantofel Pria.jpg" alt="Sepatu Loafer Pria"></div>
+      <div class="info"><span class="kategori">Sepatu</span><h3>Sepatu Loafer Pria</h3><div class="harga">Rp257.000</div><div class="pilihan-group"><label>Ukuran: 39, 40, 41, 42, 43</label></div><div class="pilihan-group"><label>Warna: Hitam, Coklat, Navy</label></div><div class="stok">Stok: 759</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Hijab Wanita Modern.jpg" alt="Hijab Wanita Modern"></div>
+      <div class="info"><span class="kategori">Hijab</span><h3>Hijab Wanita Modern</h3><div class="harga">Rp65.000</div><div class="pilihan-group"><label>Ukuran: Standard</label></div><div class="pilihan-group"><label>Warna: Hitam, Krem, Pink, Biru Muda</label></div><div class="stok">Stok: 1347</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Hijab Pashmina.jpg" alt="Hijab Pashmina"></div>
+      <div class="info"><span class="kategori">Hijab</span><h3>Hijab Pashmina</h3><div class="harga">Rp55.000</div><div class="pilihan-group"><label>Ukuran: Standard</label></div><div class="pilihan-group"><label>Warna: Hitam, Krem, Tan, Abu</label></div><div class="stok">Stok: 947</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Jam Tangan Pria & Wanita.jpg" alt="Jam Tangan Pria & Wanita"></div>
+      <div class="info"><span class="kategori">Lainnya</span><h3>Jam Tangan Pria & Wanita</h3><div class="harga">Rp535.000</div><div class="pilihan-group"><label>Ukuran: Standard</label></div><div class="pilihan-group"><label>Warna: Silver, Gold, Rose Gold</label></div><div class="stok">Stok: 278</div></div>
+    </div>
+    <div class="template-produk-card">
+      <div class="gambar"><img src="Kacamata Pria & Wanita.jpg" alt="Kacamata Pria & Wanita"></div>
+      <div class="info"><span class="kategori">Lainnya</span><h3>Kacamata Pria & Wanita</h3><div class="harga">Rp370.000</div><div class="pilihan-group"><label>Ukuran: Standard</label></div><div class="pilihan-group"><label>Warna: Hitam, Coklat, Silver</label></div><div class="stok">Stok: 168</div></div>
+    </div>
+  </template>
+
+  <!-- VIEW: PROFIL PEMBELI -->
+  <section id="view-profil" class="hidden">
+    <div id="profilBox"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Tentang Kami</h2>
+    <p>
+      Fashion Lisna Nuriyanti merupakan toko fashion online yang menyediakan berbagai produk fashion pria dan wanita berkualitas dengan harga terjangkau. Kami berkomitmen memberikan pengalaman belanja yang mudah, aman, dan terpercaya.
+    </p>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#produk">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="contact-info">
+      <p>Email: info@lisnanuriyanti.com</p>
+      <p>Phone: +62 123-456-7890</p>
+    </div>
+    <div class="social-media">
+      <a href="#"><img src="facebook.png" alt="Facebook"> Fashion Lisna Official</a>
+      <a href="#"><img src="x.png" alt="X"> @LisnaFashion</a>
+      <a href="#"><img src="instagram.png" alt="Instagram"> @fashion.lisna</a>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div id="cartOverlay" class="overlay hidden"></div>
+  <aside id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Keranjang Belanja</h2>
+      <button id="closeCart">X</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="total">Total: <span id="totalHarga">Rp 0</span></div>
+      <button id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- ✅ MODAL CHECKOUT — HANYA SATU, LENGKAP -->
+  <div id="checkoutModal" class="modal hidden">
+    <div class="modal-content checkout-modal-content">
+      <div class="checkout-header">
+        <h2>Checkout & Pembayaran</h2>
+        <button type="button" id="cancelCheckout" class="checkout-close">X</button>
+      </div>
+      <form id="checkoutForm">
+        <div class="checkout-section">
+          <h3 class="section-label">Data Pembeli</h3>
+          <input type="text" id="namaPembeli" placeholder="Nama Lengkap" required>
+          <input type="email" id="emailPembeli" placeholder="Email (contoh: nama@email.com)" required>
+          <input type="text" id="noHp" placeholder="No. HP / WhatsApp" required>
+        </div>
+
+        <div class="checkout-section">
+          <h3 class="section-label">Alamat Pengiriman</h3>
+          <select id="negaraInput">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Lainnya">Negara Lain...</option>
+          </select>
+          <div id="wilayahIndonesiaBox">
+            <div class="grid-2">
+              <select id="provinsiInput"></select>
+              <select id="kabupatenInput"></select>
+            </div>
+            <div id="provinsiLainBox" class="hidden">
+              <input type="text" id="provinsiLainInput" placeholder="Nama Provinsi">
+            </div>
+            <div id="kabupatenLainBox" class="hidden">
+              <input type="text" id="kabupatenLainInput" placeholder="Nama Kabupaten/Kota">
+            </div>
+            <input type="text" id="kecamatanInput" placeholder="Kecamatan">
+          </div>
+          <div id="negaraLainBox" class="hidden">
+            <input type="text" id="negaraLainInput" placeholder="Nama Negara Tujuan">
+            <input type="text" id="kecamatanInputLuar" placeholder="Kota / Wilayah">
+          </div>
+          <textarea id="alamatLengkap" placeholder="Alamat lengkap (jalan, no rumah, RT/RW)" rows="2" required></textarea>
+          <input type="text" id="blokInput" placeholder="Blok / Patokan (opsional)">
+          <label class="section-label" style="border:none;margin-bottom:6px;">Tipe Alamat</label>
+          <div class="tipe-alamat-group">
+            <button type="button" id="tipe-rumah" class="tipe-alamat-btn active" onclick="pilihTipeAlamat('rumah')">🏠 Rumah</button>
+            <button type="button" id="tipe-kantor" class="tipe-alamat-btn" onclick="pilihTipeAlamat('kantor')">🏢 Kantor</button>
+          </div>
+          <input type="hidden" id="tipeAlamatValue" value="rumah">
+        </div>
+
+        <div class="checkout-section">
+          <h3 class="section-label">Metode Pengiriman</h3>
+          <div class="pengiriman-options">
+            <label class="pengiriman-card">
+              <input type="radio" name="pengiriman" value="reguler" checked>
+              <div><b>Reguler</b> — estimasi sesuai provinsi tujuan</div>
+            </label>
+            <label class="pengiriman-card">
+              <input type="radio" name="pengiriman" value="kargo">
+              <div><b>Kargo</b> — lebih hemat, waktu lebih lama</div>
+            </label>
+          </div>
+          <div style="font-size:13px;color:#666;">Estimasi: <b id="ongkirLabel">-</b></div>
+        </div>
+
+        <!-- ✅ METODE PEMBAYARAN LENGKAP -->
+        <div class="checkout-section">
+          <h3 class="section-label">Metode Pembayaran</h3>
+
+          <div class="payment-group open" id="payGroup-bank">
+            <div class="payment-group-title open" onclick="togglePaymentGroup('bank')">
+              <span>🏦 Transfer Bank</span>
+              <span class="toggle-arrow">^</span>
+            </div>
+            <div class="payment-options" id="payOptions-bank">
+              <label>
+                <input type="radio" name="pembayaran" value="BCA">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#003d79;color:#fff;">BCA</span>
+                  <div><div class="pay-name">Bank BCA</div><div class="pay-sub">Transfer manual</div></div>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="pembayaran" value="BRI">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#00529c;color:#fff;">BRI</span>
+                  <div><div class="pay-name">Bank BRI</div><div class="pay-sub">Transfer manual</div></div>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="pembayaran" value="Mandiri">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#003876;color:#fff;">MDR</span>
+                  <div><div class="pay-name">Bank Mandiri</div><div class="pay-sub">Transfer manual</div></div>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="pembayaran" value="BNI">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#ec6726;color:#fff;">BNI</span>
+                  <div><div class="pay-name">Bank BNI</div><div class="pay-sub">Transfer manual</div></div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="payment-group" id="payGroup-va">
+            <div class="payment-group-title" onclick="togglePaymentGroup('va')">
+              <span>💳 Virtual Account</span>
+              <span class="toggle-arrow">v</span>
+            </div>
+            <div class="payment-options hidden" id="payOptions-va">
+              <label>
+                <input type="radio" name="pembayaran" value="VA BCA">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#003d79;color:#fff;">VA</span>
+                  <div><div class="pay-name">VA BCA</div><div class="pay-sub">Verifikasi otomatis</div></div>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="pembayaran" value="VA Mandiri">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#003876;color:#fff;">VA</span>
+                  <div><div class="pay-name">VA Mandiri</div><div class="pay-sub">Verifikasi otomatis</div></div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="payment-group" id="payGroup-ewallet">
+            <div class="payment-group-title" onclick="togglePaymentGroup('ewallet')">
+              <span>📱 E-Wallet</span>
+              <span class="toggle-arrow">v</span>
+            </div>
+            <div class="payment-options hidden" id="payOptions-ewallet">
+              <label>
+                <input type="radio" name="pembayaran" value="GoPay">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#00aed6;color:#fff;">GP</span>
+                  <div><div class="pay-name">GoPay</div><div class="pay-sub">Scan / transfer</div></div>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="pembayaran" value="OVO">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#4c3494;color:#fff;">OVO</span>
+                  <div><div class="pay-name">OVO</div><div class="pay-sub">Scan / transfer</div></div>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="pembayaran" value="DANA">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#108ee9;color:#fff;">DNA</span>
+                  <div><div class="pay-name">DANA</div><div class="pay-sub">Scan / transfer</div></div>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="pembayaran" value="ShopeePay">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#ee4d2d;color:#fff;">SP</span>
+                  <div><div class="pay-name">ShopeePay</div><div class="pay-sub">Scan / transfer</div></div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="payment-group" id="payGroup-qris">
+            <div class="payment-group-title" onclick="togglePaymentGroup('qris')">
+              <span>📷 QRIS</span>
+              <span class="toggle-arrow">v</span>
+            </div>
+            <div class="payment-options hidden" id="payOptions-qris">
+              <label>
+                <input type="radio" name="pembayaran" value="QRIS">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#e2193b;color:#fff;">QR</span>
+                  <div><div class="pay-name">QRIS</div><div class="pay-sub">Scan QR dari e-wallet manapun</div></div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="payment-group" id="payGroup-cod">
+            <div class="payment-group-title" onclick="togglePaymentGroup('cod')">
+              <span>🚚 Bayar di Tempat</span>
+              <span class="toggle-arrow">v</span>
+            </div>
+            <div class="payment-options hidden" id="payOptions-cod">
+              <label>
+                <input type="radio" name="pembayaran" value="COD">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#2f5d62;color:#fff;">COD</span>
+                  <div><div class="pay-name">Bayar di Tempat (COD)</div><div class="pay-sub">Bayar tunai ke kurir saat barang tiba</div></div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="payment-group" id="payGroup-card">
+            <div class="payment-group-title" onclick="togglePaymentGroup('card')">
+              <span>💳 Kartu Kredit / Debit</span>
+              <span class="toggle-arrow">v</span>
+            </div>
+            <div class="payment-options hidden" id="payOptions-card">
+              <label>
+                <input type="radio" name="pembayaran" value="Kartu Kredit/Debit">
+                <div class="payment-card">
+                  <span class="pay-icon" style="background:#1a1a2e;color:#fff;">V/M</span>
+                  <div><div class="pay-name">Visa / Mastercard</div><div class="pay-sub">Pembayaran aman via gateway</div></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- VERIFIKASI PEMBAYARAN -->
+        <div class="checkout-section" id="verifikasiSection" style="display:none;">
+          <h3 class="section-label">Verifikasi Pembayaran</h3>
+          <p style="font-size:13px;color:#666;margin-bottom:10px;">Masukkan nomor untuk verifikasi pembayaran:</p>
+          <input type="text" id="noRekening" placeholder="Nomor akan muncul sesuai metode" style="margin-bottom:5px;">
+          <small id="verifikasiHint" style="color:#888;font-size:12px;display:block;margin-bottom:10px;"></small>
+        </div>
+
+        <div class="checkout-section summary">
+          <h3 class="section-label">Ringkasan Pesanan</h3>
+          <div id="checkoutItems"></div>
+          <div class="total">Total Pembayaran: <span id="checkoutTotal">Rp 0</span></div>
+        </div>
+
+        <button type="submit" class="btn-primary checkout-confirm-btn">Konfirmasi Pesanan</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL STATUS TRANSAKSI -->
+  <div id="statusModal" class="modal hidden">
+    <div class="modal-content status-modal-content">
+      <div id="statusProcessing" class="status-box hidden">
+        <div class="spinner"></div>
+        <h3>Memproses Pesananmu...</h3>
+        <p>Mohon tunggu, kami sedang verifikasi pembayaranmu ya 🙏</p>
+      </div>
+      <div id="statusSuccess" class="status-box">
+        <div class="success-icon">✓</div>
+        <h3>Terima Kasih! Pesanan Berhasil 🎉</h3>
+        <p id="statusOrderId" style="font-weight:bold;color:#2f5d62;"></p>
+        <p id="statusOrderTotal"></p>
+        <p style="margin-top:8px;">Pesananmu sedang diproses dan bisa dipantau di halaman <b>Profil Saya</b>.</p>
+        <button id="statusCloseBtn" class="btn-primary" style="margin-top:15px;">Selesai</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL LOGIN ADMIN -->
+  <div id="adminLoginModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Login Admin</h2>
+      <p class="hint">Penjual: <b>admin</b> / <b>admin123</b> &nbsp;|&nbsp; CS: <b>cs</b> / <b>cs123</b></p>
+      <form id="adminLoginForm">
+        <div class="role-select">
+          <label><input type="radio" name="adminRole" value="penjual" checked> Admin Penjual</label>
+          <label><input type="radio" name="adminRole" value="cs"> Admin Customer Service</label>
+        </div>
+        <input type="text" id="adminUser" placeholder="Username" required>
+        <input type="password" id="adminPass" placeholder="Password" required>
+        <button type="submit" class="btn-primary">Login</button>
+        <button type="button" class="btn-secondary" id="cancelAdminLogin">Batal</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- PANEL ADMIN -->
+  <div id="adminPanel" class="admin-panel hidden">
+    <div class="admin-header">
+      <h2>Dashboard Admin <span id="adminRoleLabel"></span></h2>
+      <button id="closeAdmin">Keluar</button>
+    </div>
+    <div class="admin-stats">
+      <div class="stat-card"><h3 id="statProduk">0</h3><p>Jenis Produk</p></div>
+      <div class="stat-card"><h3 id="statUser">0</h3><p>Total User</p></div>
+      <div class="stat-card"><h3 id="statTransaksi">0</h3><p>Total Transaksi</p></div>
+      <div class="stat-card"><h3 id="statPendapatan">Rp 0</h3><p>Total Pendapatan</p></div>
+    </div>
+    <div class="admin-tabs">
+      <button class="tab-btn active" data-tab="produk">Kelola Produk</button>
+      <button class="tab-btn" data-tab="transaksi">Riwayat & Status Transaksi</button>
+      <button class="tab-btn" data-tab="user">Data Pelanggan</button>
+      <button class="tab-btn" data-tab="chat">Live Chat Masuk</button>
+    </div>
+    <div id="adminContent"></div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- MODAL QRIS -->
+  <div id="qrisModal" class="modal hidden">
+    <div class="modal-content qris-content">
+      <h3>Scan QRIS (Demo)</h3>
+      <div id="qrisCanvasBox"></div>
+      <p>Total Bayar: <b id="qrisTotal"></b></p>
+      <p style="font-size:12px;color:#999;">*QR ini adalah simulasi untuk keperluan demo, belum terhubung ke penyedia QRIS resmi.</p>
+      <div class="qris-actions" style="display:flex;gap:10px;margin-top:10px;">
+        <button onclick="batalQRIS()" class="btn-secondary">Batal</button>
+        <button onclick="lanjutkanSetelahQRIS()" class="btn-primary">Saya Sudah Bayar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOADING PEMBAYARAN -->
+  <div id="loadingOverlay" class="hidden">
+    <div class="spinner"></div>
+    <h2>Memproses Pembayaran...</h2>
+    <p>Mohon tunggu sebentar, jangan tutup halaman ini.</p>
+  </div>
+
+  <!-- WHATSAPP FLOAT + CHAT WEBSITE -->
+  <button id="waFloatBtn" class="wa-float-btn" title="Chat via WhatsApp">💬</button>
+  <button id="chatFloatBtn" class="chat-float-btn" title="Chat di Website">💭</button>
+  <div id="chatWidget" class="chat-widget hidden">
+    <div class="chat-widget-header">
+      <span>Live Chat Toko</span>
+      <button id="closeChatWidget">✕</button>
+    </div>
+    <div id="chatBody" class="chat-body">
+      <div class="chat-bubble admin">Halo! Ada yang bisa kami bantu seputar produk, ukuran, ongkir, atau pembayaran? 😊</div>
+    </div>
+    <form id="chatForm" class="chat-form">
+      <input type="text" id="chatInput" placeholder="Tulis pesan...">
+      <button type="submit">Kirim</button>
+    </form>
+    <div class="chat-wa-link">atau <a id="chatWaLink" href="#">lanjutkan di WhatsApp →</a></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
